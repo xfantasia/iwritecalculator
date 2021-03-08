@@ -18,7 +18,7 @@ function icalculator(rate, nos_of_words) {
 }
 
 
-//
+//Computation for the number of words entered 
 function nos_words_action(text_val) {
     //initialize variables
     var rate = 0;
