@@ -68,6 +68,8 @@
                 </div>
             </div>
 
+<!-- Text trigger modal -->
+<a href="#" style="text-decoration:none;" class="danger" data-toggle="modal" data-target="#exampleModal"><i style="color:red;"><b>*</b><small>Important Note</small></i></a>
 
         </form>
         
@@ -75,6 +77,7 @@
 
 
         <div class="social-media">
+
 
                 <a href="https://www.iwrite.ae/appointment-request"><button type="button" class="btn btn-primary btn-sm">Schedule an Appointment</button></a><hr>
 
@@ -86,6 +89,49 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title warning" id="exampleModalLabel">Important Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+<ul>
+<li>Ghost writing comes with editing by default.</li>
+<li>eBook Publishing comes with manuscript formatting + Cover design + Amazon Print on Demand.</li>
+<li>For Blog articles with SEO, the flat rate is 0.2USD/Word and the first post goes live 1 week from the date of project sign off.</li>
+<li>For Social Media Management, which includes Social Media Calendar + Content Creation + Instagram &amp; Facebook Graphic Design + 5 posts/week; cost is $1,500/Month; first post goes live 1 week from the date of project sign off.</li>
+</ul>
+<br /><br />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+</script>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 <script src="assets/js/engine.js"></script>
 
