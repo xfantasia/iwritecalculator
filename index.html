@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>iWrire | Calculator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+
+</head>
+
+
+<body>
+    <div class="registration-form">
+        <form>
+            <div class="form-iconx">
+                <!--<span><i class="icon icon-user"></i></span>-->
+                <span style="color:orange;"><a href="https://www.iwrite.ae">Home</a> | <a href="https://www.iwrite.ae/blog">Blog</a></span><hr>
+                <img src="assets/img/iwrite-logo.png" height="60px"/> &nbsp; | <b>Calculator</b><br><hr>
+            </div>
+
+
+            <span style="font-size: 50px;"> <b id="total_cost">$0.00</b> <small style="font-size: 25px; color:gray;"><i>Total cost</i> </small></span><br>
+            <small>Project Duration: <b id="duration_display">0 Weeks</b></small>
+            <hr>
+
+            <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                        <label for="formControlRange"><i style="" class="form-text text-primary font-weight-bold">iWrite Service </i></label><br>
+                            <select onchange="service_type(this.value)" class="custom-select my-2 mr-sm-3" aria-describedby="selectHelp" id="select_type">
+                            <option selected value="0">:: Services ::</option>
+                            <option value="1">Ghost/Book writing</option>
+                            <option value="2">Book Editing</option>
+                            <option value="3">Ghost Writing + eBook Publishing</option>
+                            <option value="4">eBook Publishing</option>
+                            </select>
+                            <small id="wordsHelp" class="form-text text-muted">Select iWrite Service</small>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <span style="font-size: 25px;"> <b id="rate_display">$0</b> <small><i style="color:gray;">per word</i> </small></span>
+                    </div>
+            </div>
+
+        <br>
+
+            <div class="rowx">
+                <div class="form-group">
+                    <label for="formControlRange"><i style="" class="form-text text-primary font-weight-bold">Number of Words </i></label><br>
+                    <input id="range" type="range" name="rangeInput" min="1" step="10" max="1000000" value="250000" class="form-control-range" onchange="updateTextInput(this.value);" oninput="amount.value=rangeInput.value;nos_words_action(this.value);">
+                </div>
+            </div>
+
+            <div class="rowx">
+                <div class="form-group">
+                    <input class="form-control font-weight-bold" aria-describedby="wordsHelp" oninput="rangeInput.value=amount.value" id="box" type="text" value="0" name="amount" for="rangeInput" onkeyup="nos_words_action(this.value);updateTextInput(this.value);" oninput="amount.value=rangeInput.value" onchange="nos_words_action(this.value);" placeholder="Number of Words" />
+                    <small id="wordsHelp" class="form-text text-muted">Enter the number of words</small>
+                </div>
+            </div>
+
+
+        </form>
+        
+
+
+
+        <div class="social-media">
+
+                <button type="button" class="btn btn-primary btn-sm">Schedule an Appointment</button><hr>
+
+            <h5>Social media</h5>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/iwrite.ae/"><i class="icon-social-facebook" title="Facebook"></i></a>
+                <a href="https://www.instagram.com/iwrite.ae/"><i class="icon-social-instagram" title="Instagram"></i></a>
+                <a href="https://www.linkedin.com/in/tochukwunkwocha/"><i class="icon-social-linkedin" title="LinkedIn"></i></a>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/js/engine.js"></script>
+
+
+</body>
+</html>
